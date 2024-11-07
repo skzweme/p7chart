@@ -18,11 +18,6 @@ var totalData;
 var dFirst;
 
 var colors = {
-    "4": "#7f6bbb",
-    "3": "#ff9c33",
-    "2": "#7eb35d",
-    "1": "#fcf596 ",
-    "0": "#939393",
     "S": "#fff46f",
     "A": "#6fc6ff",
     "B": "#ff6fe7",
