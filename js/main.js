@@ -137,7 +137,7 @@ function showChart(key, asc) {
             if (d.isEliminated) {
                 return "top";
             } else if (d.latestRank<10) {                
-                return "top nine";
+                return "top seven";
             } else {
                 return "top current"
             }
@@ -282,7 +282,7 @@ function getLatestRank(d) {
 // Returns the rank for current contestants, and -1 for all those eliminated
 function getCurrentRank(d) {
     if (d.ranking.length < episodes.length) {
-        return -1;
+        return 0;
     }
     return getLatestRank(d);
 }
