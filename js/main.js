@@ -136,7 +136,7 @@ function showChart(key, asc) {
         .attr("class", function(d) {
             if (d.isEliminated) {
                 return "top";
-            } else if (d.latestRank<7) {                
+            } else if (d.latestRank<8) {                
                 return "top seven";
             } else {
                 return "top current"
