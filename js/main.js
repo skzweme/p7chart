@@ -318,7 +318,7 @@ function getRankInfo(d) {
         return "Withdrew from show";
     }
     if (d.isEliminated) {
-        return "Eliminated in Episode " + episodes[d.ranking.length - 1];
+        return "Eliminated in Episode " + episodes[d.ranking.length - 0];
     }
     return "Member of ZEROBASEONE, Rank " + d.currentRank + " " + displayRankChange(d);
 }
