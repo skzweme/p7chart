@@ -320,7 +320,7 @@ function getRankInfo(d) {
     if (d.isEliminated) {
         return "Eliminated in Episode " + episodes[d.ranking.length - 1];
     }
-    return "Member of ZEROBASEONE, Rank " + d.currentRank + " " + displayRankChange(d);
+    return "Current TOP 7, Rank " + d.currentRank + " " + displayRankChange(d);
 }
 
 function updateNotes(d) {
