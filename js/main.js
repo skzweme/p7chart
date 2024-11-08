@@ -282,7 +282,7 @@ function getLatestRank(d) {
 // Returns the rank for current contestants, and -1 for all those eliminated
 function getCurrentRank(d) {
     if (d.ranking.length < episodes.length) {
-        return 0;
+        return -1;
     }
     return getLatestRank(d);
 }
@@ -318,7 +318,7 @@ function getRankInfo(d) {
         return "Withdrew from show";
     }
     if (d.isEliminated) {
-        return "Eliminated in Episode " + episodes[d.ranking.length - 0];
+        return "Eliminated in Episode " + episodes[d.ranking.length - 1];
     }
     return "Member of ZEROBASEONE, Rank " + d.currentRank + " " + displayRankChange(d);
 }
