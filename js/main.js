@@ -6,14 +6,14 @@ var SELECT_WIDTH = 8;
 var NORMAL_OPACITY = 0.1;
 var SELECT_OPACITY = 1;
 var CHART_WIDTH = 500;
-var CUTOFF = 35; // Update cutoff
+var CUTOFF = 7; // Update cutoff
 
 var height = 390;
 var padding = 40;
 var middlePadding = (padding * 2) + 100;
 var width = $(window).width() - middlePadding - CHART_WIDTH - 30;
 
-var episodes = [2, 3, 5, 6, 8];
+var episodes = [2, 3, 5, 6, 8, 11, 12];
 var totalData;
 var dFirst;
 
@@ -320,7 +320,7 @@ function getRankInfo(d) {
     if (d.isEliminated) {
         return "Eliminated in Episode " + episodes[d.ranking.length - 1];
     }
-    return "Rank " + d.currentRank + " " + displayRankChange(d);
+    return "Member of CLOSE YOUR EYES, Rank " + d.currentRank + " " + displayRankChange(d);
 }
 
 function updateNotes(d) {
